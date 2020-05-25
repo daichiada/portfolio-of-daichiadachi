@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--  サイトタイトル-->
+    <title>DAICHI ADACHI's Portfolio</title>
+    <meta name="description" content="アダチダイチのポートフォリオ" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/logo.png" />
+
+    <!-- FontAwsome -->
+    <script src="https://kit.fontawesome.com/a379e55c4d.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+    <!-- jQuery, Java Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+  </head>
+  <body>
+    <!------------------- ヘッダー --------------------->
+    <header class="top-header">
+      <div class="container-fluid">
+        <!-- ロゴ -->
+        <a href="index.html">
+          <div class="logo-box">
+            <img
+              src="../img/logo.png"
+              alt="アダチダイチのロゴ"
+              class="site-logo"
+            />
+          </div>
+        </a>
+        <!-- ロゴ終了 -->
+
+        <!-- ハンバーガーボタン -->
+        <div class="menu-sp-wrapper">
+          <a class="menu-sp" href="#">
+            <span class="menu-line menu-line-top"></span>
+            <span class="menu-line menu-line-center"></span>
+            <span class="menu-line menu-line-bottom"></span>
+          </a>
+          <!-- ハンバーガーボタン終了 -->
+
+          <!-- フルスクリーンナビ ハンバーガーボタンで開閉-->
+          <nav class="gnav-sp">
+            <div class="gnav-sp-wrap">
+              <ul class="gnav-sp-menu">
+                <li class="gnav-menu-item"><a href="#">HOME</a></li>
+                <li class="gnav-menu-item"><a href="#">ABOUT ME</a></li>
+                <li class="gnav-menu-item"><a href="#">WORKS</a></li>
+                <li class="gnav-menu-item"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- フルスクリーンナビ終了 -->
+        </div>
+        <!-- div.menu-sp-wrapper 終了 -->
+      </div>
+      <!-- div.container終了 -->
+    </header>
+    <!------------------- ヘッダー終了 --------------------->
+
+    <!------------------- トップページ- -------------------->
+    <section id="top">
+      <div class="container-fluid">
+        <!-- スマホ表示 -->
+        <div class="box-video-sp">
+          <video
+            loop autoplay muted playsinline class="top-video"
+          >
+          <source src="../img/topvideo-sp-custom.mp4" type="video/mp4" />
+          <source src="../img/top-video-sp.webm" type="video/webm">
+        </div>
+        <!-- スマホ表示 -->
+
+        <!-- PC表示 -->
+        <div class="box-video-pc">
+          <video
+            loop autoplay muted playsinline class="top-video"
+          >
+          <source src="../img/topvideo.mp4" type="video/mp4" />
+          <source src="../img/topvideo.webm" type="video/webm">
+        </div>
+        <!-- PC表示 -->
+
+        <!-- Daichi Adachi -->
+        <div class="title-center">
+          <h1 class="top-center">Daichi Adachi</h1>
+        </div>
+        <!-- 下向きやじるし -->
+        <a href="#about" class="down-btn">
+          <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+        </a>
+      </div>
+    </section>
+    <!------------------- トップページ終了 --------------------->
+
+    <!------------------- あいさつ -------------------->
+    <section id="greeting">
+      <div class="container-fluid">
+        <div class="greeting-box">
+          <p id="typing"></p>
+          <!-- こんにちは、ポートフォリオへようこそ。 -->
+          <h2 class="greeting-jpn" id="greeting-japanese"></h2>
+          <!-- Welcome, to My Portfolio -->
+          <h2 class="greeting-eng" id="greeting-english"></h2>
+        </div>
+      </div>
+    </section>
+    <!------------------- あいさつ終了 -------------------->
+
+    <!------------------- About Me 自己紹介 -------------------->
+    <section id="about">
+      <div class="container-fluid about-container">
+
+        <!-- ABOUT ME セクションタイトル -->
+        <h2 class="section-title aboutme-title fadein">About Me</h2>
+        <!-- ABOUT ME セクションタイトル -->
+
+        <!-- プロフィール写真 -->
+       <div class="flexbox fadein">
+        <div class="about-pic">
+          <img src="../img/daichipic.jpeg" alt="アダチダイチのプロフィール写真" class="profile" />
+        </div>
+        <!-- プロフィール写真 -->
+
+        <!-- 名前と経歴 -->
+        <div class="about-text-box">
+          <div class="name-wrapper">
+            <h3 class="author-name">アダチダイチ</h3>
+          </div>
+          <div class="message-wrapper">
+            <p class="about-message">恥の多い生涯を送って来ました。自分には、人間の生活というものが、見当つかないのです。自分は東北の田舎に生れましたので、汽車をはじめて見たのは、よほど大きくなってからでした。自分は停車場のブリッジを、上って、降りて、そうしてそれが線路をまたぎ越えるために造られたものだという事には全然気づかず、ただそれは停車場の構内を外国の遊戯場みたいに、複雑に楽しく、ハイカラにするためにのみ、設備せられてあるものだとばかり思っていました。しかも、かなり永い間そう思っていたの</p>
+          </div>
+        </div>
+        <!-- 名前と経歴 -->
+
+      </div>
+    </section>
+    <!------------------- About Me 自己紹介終了 -------------------->
+
+    <!------------------- PC写真 -------------------->
+    <section id="pic">
+      <div class="container-fluid">
+        <img src="../img/pc-pic-min.jpeg" alt="マックブックPC" class="pc-picture" />
+      </div>
+    </section>
+    <!------------------- PC写真終了 -------------------->
+
+    <!------------------- Works 実績 -------------------->
+    <section id="works">
+      <div class="container-fluid">
+        <h2 class="section-title works-title fadein">Works</h2>
+
+        <!-- Works Wrapper -->
+        <div class="works-box flexbox">
+          <a href="micky-works.html" class="okajima-works">
+            <div class="okajima-works-wrapper works-wrapper fadein">
+              <img src="../img/micky-works.png" alt="友人のポートフォリオサイトを作りました。実績の１つです。" class="okajima-works works-img">
+            </div>
+          </a>
+          <a href="#" class="ritsugensya">
+            <div class="ritsugensya-works-wrapper works-wrapper fadein">
+              <img src="../img/ritsugensya-works.jpg" alt="書道教室のホームページを作成しました。実績の１つです。" class="ritsugensya-works works-img">
+            </div>
+          </a>
+          <a href="#" class="myportfolio-works">
+            <div class="myportfolio-works-wrapper works-wrapper fadein" >
+              <img src="../img/myportfolio.jpg" alt="自分のポートフォリオを作成しました。実績の１つです。" class="myportfolio-works works-img">
+            </div>
+          </a>
+        </div>
+        <!-- Works Wrapper　終了 -->
+
+      </div>
+    </section>
+    <!------------------- Works 実績終了 -------------------->
+
+    <!------------------- Contact お問い合わせ -------------------->
+
+    <section id="contact">
+      <div class="container-fluid">
+
+        <!-- Contact セクションタイトル -->
+        <h2 class="section-title contact-title">Contact</h2>
+        <!-- Contacｔ セクションタイトル 終了-->
+
+        <div class="contact-wrapper">
+          <!-- フォーム -->
+          <form action="confirm.php" method="POST" class="contact-form">
+          <!-- name -->
+          <div class="contact-name-item">
+            <input type="text" name="yourname" placeholder="Name">
+          </div>
+          <!-- name 終了 -->
+
+          <!-- E-mail -->
+          <div class="contact-email-item">
+            <input type="email" name="email" placeholder="Email">
+          </div>
+          <!-- E-mail 終了 -->
+
+          <!-- メッセージ -->
+          <div class="contact-detail-item">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
+          <!-- メッセージ終了 -->
+          <!-- 送信ボタン -->
+          <input type="submit" value="Submit">
+          <!-- 送信ボタン終了 -->
+          </form>
+          <!-- フォーム終了 -->
+        </div>
+      </div>
+    </section>
+    <!------------------- Contact お問い合わせ終了 -------------------->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+
+        <div class="flex-box footer-logo-wrapper">
+          <!-- Twitter Logo -->
+          <a href="#">
+            <div class="footer-logo twitter-logo">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+          <!-- Twitter Logo 終了-->
+
+          <!-- Mail Logo -->
+          <a href="#">
+            <div class="footer-logo mail-logo">
+              <i class="fas fa-envelope"></i>
+            </div>
+          </a>
+            <!-- Mail Logo 終了-->
+
+          <!-- Github Logo -->
+          <a href="#">
+            <div class="footer-logo github-logo">
+              <i class="fab fa-github"></i>
+            </div>
+          </a>
+          <!-- Github Logo 終了-->
+        </div>
+
+          <p class="copyright">© 2020 Daichi Adachi inc</p>
+      </div>
+    </footer>
+    <!-- Footer終了 -->
+    <!-- jQuery、Popper.js、Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

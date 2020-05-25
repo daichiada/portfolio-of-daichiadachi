@@ -1,0 +1,544 @@
+/*------------------------------------------------------
+Table of content
+--------------------------------------------------------
+1. General Styles (typography, links, Lsits, images , Helper classes, sections)
+2. ロード画面
+3. ヘッダー
+4. トップ
+5. あいさつ
+6. プロフィール
+7. 写真
+8. 実績
+9. お問い合わせ
+10. フッター
+------------------------------------------------------*/
+
+/*----------------------------------------
+1. 共通のスタイル
+----------------------------------------*/
+
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.1rem;
+  background-color: #fafafa;
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  color: #333;
+  font-family: "Futura", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}
+p {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+b,
+strong {
+  font-weight: 700;
+}
+section {
+  position: relative;
+  display: block;
+}
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+h6 {
+  font-size: 1.6rem;
+}
+a,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+/* セクションタイトル */
+h2.section-title {
+  text-align: center;
+  padding: 10%;
+  font-weight: bold;
+}
+/* フレックスボックス */
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*----------------------------------------
+1.5 jQuery 共通スタイル
+----------------------------------------*/
+/* ふわっとスクロール */
+.fadein {
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 0.5s ease;
+}
+.fadein.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/*----------------------------------------
+2.ロード画面
+----------------------------------------*/
+/*----------------------------------------
+3. ヘッダー
+----------------------------------------*/
+header.top-header {
+  width: 100%;
+  padding: 0.6rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+/* ロゴ */
+.logo-box {
+  width: auto;
+  height: auto;
+  margin: 3rem 3.5rem;
+}
+img.site-logo {
+  width: 60px;
+  height: 65px;
+}
+/* ハンバーガーメニュー */
+.menu-sp-wrapper {
+  display: block;
+}
+a.menu-sp {
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  position: fixed;
+  z-index: 2;
+  color: #fafafa;
+}
+
+.menu-line {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: transform 0.3s;
+  width: 100%;
+}
+.menu-line-center {
+  top: 9px;
+}
+.menu-line-bottom {
+  bottom: 0;
+}
+.menu-line-top.active {
+  top: 8px;
+  transform: rotate(45deg);
+}
+.menu-line-center.active {
+  transform: scaleX(0);
+}
+.menu-line-bottom.active {
+  bottom: 10px;
+  transform: rotate(135deg);
+}
+
+/*gnav*/
+.gnav-sp {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 98;
+}
+.gnav-sp-wrap {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.gnav-menu-item {
+  margin: 40px 0;
+}
+.gnav-menu-item a {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.gnav-menu-item a:hover {
+  color: #666;
+}
+/*----------------------------------------
+4.トップページ
+----------------------------------------*/
+
+.box-video-sp {
+  position: relative;
+}
+/* スマホでは非表示 */
+.box-video-pc {
+  display: none;
+}
+
+video.top-video {
+  width: 100%;
+  height: 100%;
+}
+.title-center {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /*上下左右中央寄せ*/
+  text-align: center;
+}
+h1.top-center {
+  color: #fafafa;
+  font-style: italic;
+}
+/* 下向き矢印 */
+.arrow {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*上下左右中央寄せ*/
+  font-size: 4rem;
+  color: #fafafa;
+}
+
+/*----------------------------------------
+5.あいさつ
+----------------------------------------*/
+#greeting {
+  width: 100%;
+  height: auto;
+  padding: 10% 0;
+}
+.greeting-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+}
+.greeting-box h2 {
+  text-align: center;
+}
+.greeting-jpn {
+  margin: 10%;
+}
+.greeting-eng {
+  margin: 10%;
+}
+h2.greeting-jpn {
+  font-family: "ヒラギノ角ゴシック", "Yu Gothic";
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+h2.greeting-eng {
+  font-size: 1.4rem;
+}
+/*----------------------------------------
+6.自己紹介
+----------------------------------------*/
+.about-container {
+  width: 100%;
+  height: auto;
+  background-color: #547a82;
+}
+.profile {
+  width: 100%;
+  height: 100%;
+}
+.about-pic,
+.about-text-box {
+  width: auto;
+  height: auto;
+  margin: 10%;
+}
+
+h2.aboutme-title,
+h3.author-name,
+p.about-message {
+  color: #e5eec1;
+}
+.name-wrapper {
+  margin-bottom: 10%;
+}
+h3.author-name {
+  text-align: center;
+}
+/*----------------------------------------
+7. PC写真
+----------------------------------------*/
+img.pc-picture {
+  opacity: 0.8;
+}
+/*----------------------------------------
+8. Works
+----------------------------------------*/
+#works {
+  width: 100%;
+  height: auto;
+  background-color: #547a82;
+  padding-bottom: 10%;
+}
+.works-wrapper {
+  margin: 10%;
+}
+.works-img {
+  width: 35rem;
+  height: 20rem;
+  object-fit: cover;
+  border: 0.2rem solid #fafafa;
+}
+h2.works-title {
+  color: #fafafa;
+}
+/*----------------------------------------
+9. Contact
+----------------------------------------*/
+#contact {
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+}
+h2.contact-title {
+  color: #333;
+}
+.contact-wrapper {
+  margin-bottom: 10%;
+}
+form.contact-form {
+  width: 80%;
+  margin: auto;
+}
+input[type="text"],
+input[type="email"] {
+  border: solid 0.2rem #333;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 10% 10%;
+}
+textarea {
+  width: 80%;
+  border: solid 0.2rem #333;
+  padding: 1rem;
+  height: 25rem;
+  font-size: 1.5rem;
+  margin: 0 10% 10%;
+}
+input[type="submit"] {
+  background: #fafafa;
+  border: solid 0.2rem #333;
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  width: 40%;
+  border-radius: 5px;
+  margin: 0 30% 10%;
+}
+/*----------------------------------------
+10. Footer
+----------------------------------------*/
+
+.footer-logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+p.copyright {
+  text-align: center;
+}
+.footer-logo {
+  font-size: 3rem;
+  margin: 0 2rem;
+}
+
+/*----------------------------------------
+タブレットメディアクリ
+----------------------------------------*/
+@media screen and (min-width: 426px) {
+  /*----------------------------------------
+4.トップページ
+----------------------------------------*/
+
+  /* タブレット・PCでは非表示 */
+  .box-video-sp {
+    display: none;
+  }
+
+  .box-video-pc {
+    display: block;
+  }
+  video.top-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  /*----------------------------------------
+5.あいさつ
+----------------------------------------*/
+  #greeting {
+    padding: 0;
+  }
+  .greeting-jpn {
+    margin: 10% 10% 0;
+  }
+  .greeting-eng {
+    margin: 3% 10% 10%;
+  }
+  /*----------------------------------------
+6.自己紹介
+----------------------------------------*/
+  .about-pic,
+  .about-text-box {
+    width: 35%;
+    height: 100%;
+    margin: 10% 5%;
+  }
+
+  /*----------------------------------------
+7.PC写真
+----------------------------------------*/
+  img.pc-picture {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+  /*----------------------------------------
+9. Contact
+----------------------------------------*/
+  form.contact-form {
+    width: 60%;
+  }
+}
+
+/*----------------------------------------
+PCメディアクリ
+----------------------------------------*/
+@media screen and (min-width: 769px) {
+  /*----------------------------------------
+1. 共通のスタイル
+----------------------------------------*/
+  /* セクションタイトル */
+  h2.section-title {
+    padding: 10% 0 5%;
+  }
+
+  /*----------------------------------------
+4.トップページ
+----------------------------------------*/
+  h1.top-center {
+    font-size: 5.5rem;
+  }
+
+  /*----------------------------------------
+6.あいさつ
+----------------------------------------*/
+  h2.greeting-jpn {
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-size: 3.5rem;
+  }
+  h2.greeting-eng {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 2.5rem;
+  }
+  /*----------------------------------------
+6.自己紹介
+----------------------------------------*/
+  .about-pic {
+    width: 25%;
+    margin: 0 5% 10% 10%;
+  }
+  .about-text-box {
+    width: 40%;
+    margin: 0 10% 10% 5%;
+  }
+  /*----------------------------------------
+7.PC写真
+----------------------------------------*/
+  img.pc-picture {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+  }
+  /*----------------------------------------
+8. Works
+----------------------------------------*/
+  .works-img {
+    width: 70rem;
+    height: 30rem;
+  }
+
+  /*----------------------------------------
+9. Contact
+----------------------------------------*/
+  form.contact-form {
+    width: 40%;
+  }
+}

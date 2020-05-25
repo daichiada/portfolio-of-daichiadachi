@@ -1,0 +1,218 @@
+/*------------------------------------------------------
+このCSSには実績（Works）の共通スタイルを記述します。
+--------------------------------------------------------
+1. 共通のスタイル (typography, links, Lsits, images , Helper classes, sections)
+2. トップページ
+3. 実績詳細
+4. フッター
+------------------------------------------------------*/
+/*----------------------------------------
+1. 共通のスタイル
+----------------------------------------*/
+
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.1rem;
+  background-color: #fafafa;
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  color: #333;
+  font-family: "Futura", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}
+p {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+b,
+strong {
+  font-weight: 700;
+}
+section {
+  position: relative;
+  display: block;
+}
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+h6 {
+  font-size: 1.6rem;
+}
+a,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+/* セクションタイトル */
+h2.section-title {
+  text-align: center;
+  padding: 10%;
+  font-weight: bold;
+}
+/* フレックスボックス */
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*----------------------------------------
+2. トップページ
+----------------------------------------*/
+img.mockup-mworks {
+  width: 100%;
+  height: 80vh;
+  opacity: 1;
+  object-fit: cover;
+  object-position: 60%;
+}
+/*----------------------------------------
+3. 実績詳細
+----------------------------------------*/
+
+/* タイトル */
+h2.works-detail-title {
+  text-align: center;
+  padding: 40px 0 0;
+}
+
+/* 実績詳細 */
+.text-wrapper,
+.skill-wrapper {
+  width: 80%;
+  height: auto;
+  margin-top: 30px;
+}
+h3.detail-title {
+  padding-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+p.detail-text {
+  padding-bottom: 5%;
+  font-size: 1.4rem;
+}
+a.visit-site {
+  color: #547a82;
+}
+
+/* スキル詳細 */
+.skill-icon-container {
+  width: 100%;
+  height: auto;
+}
+.skill-detail-card {
+  width: 180px;
+  height: 180px;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
+}
+.skill-icon-box {
+  color: #547a82;
+  height: 80px;
+  width: 80px;
+  background: #fafafa;
+  display: block;
+  border-radius: 50px;
+  line-height: 80px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  font-size: 30px;
+  margin: 20px auto;
+}
+
+.skill-name {
+  width: 100%;
+  height: 58px;
+  background-color: #333;
+}
+.skill-name h4 {
+  color: #fafafa;
+  line-height: 58px;
+}
+/*--------------------------------------
+4.　フッター
+----------------------------------------*/
+.works-footer {
+  text-align: center;
+  background-color: #333;
+  color: #fafafa;
+}
+.sns-icon-box {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 20px;
+}
+.sns-icon-box li {
+  display: inline-block;
+}
+.sns-icon-box a {
+  width: 36px;
+  height: 36px;
+  display: block;
+  line-height: 37px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  font-size: 14px;
+  color: #fafafa;
+  margin: 10px;
+}
+p.copyright {
+  text-align: center;
+}
