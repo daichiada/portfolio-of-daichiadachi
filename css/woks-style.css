@@ -84,6 +84,11 @@
   padding-right: 0;
   padding-left: 0;
 }
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 /*----------------------------------------
 1. 共通のスタイル
 ----------------------------------------*/
@@ -193,6 +198,19 @@ h2.section-title {
 /*----------------------------------------
 2. トップページ
 ----------------------------------------*/
+/* ロゴ */
+.logo-box {
+  width: auto;
+  height: auto;
+  margin: 3rem 3.5rem;
+  position: fixed;
+  z-index: 2;
+}
+img.site-logo {
+  width: 60px;
+  height: 65px;
+}
+/* picture */
 img.mockup-mworks {
   width: 100%;
   height: 80vh;
@@ -203,7 +221,9 @@ img.mockup-mworks {
 /*----------------------------------------
 3. 実績詳細
 ----------------------------------------*/
-
+section.works-detail {
+  margin-bottom: 100px;
+}
 /* タイトル */
 h2.works-detail-title {
   text-align: center;
@@ -301,4 +321,36 @@ p.copyright {
 タブレットメディアクリ
 ----------------------------------------*/
 @media screen and (min-width: 426px) {
+}
+/*----------------------------------------
+PCメディアクリ
+----------------------------------------*/
+@media screen and (min-width: 769px) {
+  /*----------------------------------------
+3. 実績詳細
+----------------------------------------*/
+  /* タイトル */
+  h2.works-detail-title {
+    font-size: 4.8rem;
+    padding: 70px 0;
+  }
+  h3.detail-title {
+    font-size: 1.8rem;
+  }
+  p.detail-text {
+    font-size: 1.4rem;
+  }
+  /* 実績詳細 */
+
+  .text-wrapper,
+  .skill-wrapper {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* スキル詳細 */
+  .skill-detail-card {
+    margin: 20px;
+  }
 }
