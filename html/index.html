@@ -16,12 +16,7 @@
     <script src="https://kit.fontawesome.com/a379e55c4d.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
@@ -31,6 +26,17 @@
     <script type="text/javascript" src="../js/main.js"></script>
   </head>
   <body>
+    <!------------------- ロード画面 --------------------->
+    <div id="loading">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+    <!------------------- ロード画面 終了--------------------->
+
     <!------------------- ヘッダー --------------------->
     <header class="top-header">
       <div class="container-fluid">
@@ -155,9 +161,7 @@
 
     <!------------------- PC写真 -------------------->
     <section id="pic">
-      <div class="container-fluid">
-        <img src="../img/pc-pic-min.jpeg" alt="マックブックPC" class="pc-picture" />
-      </div>
+      <div class="pc-pic-container"></div>
     </section>
     <!------------------- PC写真終了 -------------------->
 
@@ -186,6 +190,7 @@
         </div>
         <!-- Works Wrapper　終了 -->
 
+
       </div>
     </section>
     <!------------------- Works 実績終了 -------------------->
@@ -196,26 +201,26 @@
       <div class="container-fluid">
 
         <!-- Contact セクションタイトル -->
-        <h2 class="section-title contact-title">Contact</h2>
+        <h2 class="section-title contact-title fadein">Contact</h2>
         <!-- Contacｔ セクションタイトル 終了-->
 
         <div class="contact-wrapper">
           <!-- フォーム -->
           <form action="confirm.php" method="POST" class="contact-form">
           <!-- name -->
-          <div class="contact-name-item">
+          <div class="contact-name-item fadein">
             <input type="text" name="yourname" placeholder="Name">
           </div>
           <!-- name 終了 -->
 
           <!-- E-mail -->
-          <div class="contact-email-item">
+          <div class="contact-email-item fadein">
             <input type="email" name="email" placeholder="Email">
           </div>
           <!-- E-mail 終了 -->
 
           <!-- メッセージ -->
-          <div class="contact-detail-item">
+          <div class="contact-detail-item fadein">
             <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
           </div>
           <!-- メッセージ終了 -->
