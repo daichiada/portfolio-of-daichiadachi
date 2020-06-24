@@ -1,4 +1,9 @@
 "use strict";
+// ローディング制御
+window.onload = function () {
+  const spinner = document.getElementById("loading");
+  spinner.classList.add("loaded");
+};
 // タイピング風表示　日本語ver.
 const typing = (element, sentence) => {
   [...sentence].forEach((character, index) => {
@@ -35,3 +40,4 @@ $(function () {
     });
   });
 });
+

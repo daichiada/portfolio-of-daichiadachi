@@ -23,11 +23,37 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="../css/woks-style.css" type="text/css" />
+
+    <!-- jQuery, Java Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    
   </head>
   <body>
+    <!------------------- ロード画面 --------------------->
+    <div id="loading">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+    <!------------------- ロード画面 終了--------------------->
     <!------------------- トップページ -------------------->
     <section class="works-top">
       <div class="container-fluid">
+        <!-- ロゴ -->
+        <a href="index.html">
+          <div class="logo-box">
+            <img
+              src="../img/logo.png"
+              alt="アダチダイチのロゴ"
+              class="site-logo"
+            />
+          </div>
+        </a>
+        <!-- ロゴ終了 -->
         <!-- トップ画像 -->
         <img
           src="../img/architect-1073608_1920.jpg"
@@ -66,68 +92,65 @@
             <h3 class="detail-title">使用したスキル</h3>
 
             <div class="skill-icon-container flexbox container">
-              <div class="row">
-                <!-- HTML 5 -->
-                <div class="skill-detail-card col-sm-4">
-                  <!-- icon -->
-                  <div class="skill-icon-box">
-                    <i class="fab fa-html5"></i>
-                  </div>
-                  <!-- /icon -->
-                  <!-- skill-name -->
-                  <div class="skill-name">
-                    <h4>HTML5</h4>
-                  </div>
-                  <!-- /skill-name -->
+              <!-- HTML 5 -->
+              <div class="skill-detail-card col-sm-4 col-md-5 col-lg-3">
+                <!-- icon -->
+                <div class="skill-icon-box">
+                  <i class="fab fa-html5"></i>
                 </div>
-                <!-- HTML 5 終了 -->
-
-                <!-- CSS 3 -->
-                <div class="skill-detail-card col-sm-4">
-                  <!-- icon -->
-                  <div class="skill-icon-box">
-                    <i class="fab fa-css3-alt"></i>
-                  </div>
-                  <!-- /icon -->
-                  <!-- skill-name -->
-                  <div class="skill-name">
-                    <h4>CSS3</h4>
-                  </div>
-                  <!-- /skill-name -->
+                <!-- /icon -->
+                <!-- skill-name -->
+                <div class="skill-name">
+                  <h4>HTML5</h4>
                 </div>
-                <!-- CSS 3 終了 -->
-
-                <!-- Java Script -->
-                <div class="skill-detail-card col-sm-4">
-                  <!-- icon -->
-                  <div class="skill-icon-box">
-                    <i class="fab fa-js-square"></i>
-                  </div>
-                  <!-- /icon -->
-                  <!-- skill-name -->
-                  <div class="skill-name">
-                    <h4>JavaScript</h4>
-                  </div>
-                  <!-- /skill-name -->
-                </div>
-                <!-- Java Script 終了 -->
-
-                <!-- Adobe Xd -->
-                <div class="skill-detail-card col-sm-4">
-                  <!-- icon -->
-                  <div class="skill-icon-box">
-                    <i class="fab fa-adobe"></i>
-                  </div>
-                  <!-- /icon -->
-                  <!-- skill-name -->
-                  <div class="skill-name">
-                    <h4>AdobeXD</h4>
-                  </div>
-                  <!-- /skill-name -->
-                </div>
-                <!-- Adobe XD 終了 -->
+                <!-- /skill-name -->
               </div>
-              <!-- /div.row -->
+              <!-- HTML 5 終了 -->
+
+              <!-- CSS 3 -->
+              <div class="skill-detail-card col-sm-4 col-md-5 col-lg-3">
+                <!-- icon -->
+                <div class="skill-icon-box">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <!-- /icon -->
+                <!-- skill-name -->
+                <div class="skill-name">
+                  <h4>CSS3</h4>
+                </div>
+                <!-- /skill-name -->
+              </div>
+              <!-- CSS 3 終了 -->
+
+              <!-- Java Script -->
+              <div class="skill-detail-card col-sm-4 col-md-5 col-lg-3">
+                <!-- icon -->
+                <div class="skill-icon-box">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <!-- /icon -->
+                <!-- skill-name -->
+                <div class="skill-name">
+                  <h4>JavaScript</h4>
+                </div>
+                <!-- /skill-name -->
+              </div>
+              <!-- Java Script 終了 -->
+
+              <!-- Adobe Xd -->
+              <div class="skill-detail-card col-sm-4 col-md-5 col-lg-3">
+                <!-- icon -->
+                <div class="skill-icon-box">
+                  <i class="fab fa-adobe"></i>
+                </div>
+                <!-- /icon -->
+                <!-- skill-name -->
+                <div class="skill-name">
+                  <h4>AdobeXD</h4>
+                </div>
+                <!-- /skill-name -->
+              </div>
+              <!-- Adobe XD 終了 -->
             </div>
             <!-- /div.container -->
           </div>

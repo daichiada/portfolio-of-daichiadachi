@@ -84,6 +84,11 @@
   padding-right: 0;
   padding-left: 0;
 }
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 /*----------------------------------------
 1. 共通のスタイル
 ----------------------------------------*/
@@ -191,8 +196,140 @@ h2.section-title {
   justify-content: center;
 }
 /*----------------------------------------
+1.5.ロード画面
+----------------------------------------*/
+/* ローディング画面 */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #a7677f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+.sk-folding-cube {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+  animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+/* ローディングAnimation */
+@-webkit-keyframes sk-foldCubeAngle {
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+/*----------------------------------------
 2. トップページ
 ----------------------------------------*/
+/* ロゴ */
+.logo-box {
+  width: auto;
+  height: auto;
+  margin: 3rem 3.5rem;
+  position: fixed;
+  z-index: 2;
+}
+img.site-logo {
+  width: 60px;
+  height: 65px;
+}
+/* picture */
 img.mockup-mworks {
   width: 100%;
   height: 80vh;
@@ -203,7 +340,9 @@ img.mockup-mworks {
 /*----------------------------------------
 3. 実績詳細
 ----------------------------------------*/
-
+section.works-detail {
+  margin-bottom: 100px;
+}
 /* タイトル */
 h2.works-detail-title {
   text-align: center;
@@ -301,4 +440,36 @@ p.copyright {
 タブレットメディアクリ
 ----------------------------------------*/
 @media screen and (min-width: 426px) {
+}
+/*----------------------------------------
+PCメディアクリ
+----------------------------------------*/
+@media screen and (min-width: 769px) {
+  /*----------------------------------------
+3. 実績詳細
+----------------------------------------*/
+  /* タイトル */
+  h2.works-detail-title {
+    font-size: 4.8rem;
+    padding: 70px 0;
+  }
+  h3.detail-title {
+    font-size: 1.8rem;
+  }
+  p.detail-text {
+    font-size: 1.4rem;
+  }
+  /* 実績詳細 */
+
+  .text-wrapper,
+  .skill-wrapper {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* スキル詳細 */
+  .skill-detail-card {
+    margin: 20px;
+  }
 }
