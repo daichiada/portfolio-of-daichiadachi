@@ -195,6 +195,9 @@ h2.section-title {
   flex-wrap: wrap;
   justify-content: center;
 }
+.color-pink {
+  color: #a7677f;
+}
 /*----------------------------------------
 1.5.ロード画面
 ----------------------------------------*/
@@ -357,6 +360,10 @@ h2.works-detail-title {
   height: auto;
   margin-bottom: 30px;
 }
+.text-detal-box {
+  width: auto;
+  height: auto;
+}
 h3.detail-title {
   padding-bottom: 30px;
   font-size: 1.4rem;
@@ -366,19 +373,17 @@ p.detail-text {
   padding-bottom: 5%;
   font-size: 1.2rem;
 }
-a.visit-site {
-  color: #547a82;
-}
 
 /* スキル詳細 */
 .skill-icon-container {
   width: 100%;
   height: auto;
+  justify-content: space-around;
 }
 .skill-detail-card {
-  width: 40%;
+  width: 45%;
   height: 180px;
-  margin: 30px auto;
+  margin-bottom: 30px;
   text-align: center;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
@@ -465,7 +470,7 @@ PCメディアクリ
   .skill-wrapper {
     width: 40%;
     height: auto;
-    margin: 0 auto;
+    margin: 0;
   }
 
   /* スキル詳細 */

@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!--  サイトタイトル-->
-    <title>Works | Cooporate Site | Ritsugensya</title>
+    <title>Works | Mitsuki Okajima's Portfolio</title>
     <meta name="description" content="アダチダイチの実績のひとつです。" />
 
     <!-- Favicon -->
-    <link rel="icon" href="../img/logo.png" />
+    <link rel="icon" href="img/logo.png" />
 
     <!-- FontAwsome -->
     <script
@@ -19,14 +19,14 @@
     ></script>
 
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="../css/woks-style.css" type="text/css" />
+    <link rel="stylesheet" href="css/woks-style.css" type="text/css" />
 
     <!-- jQuery, Java Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <!------------------- ロード画面 --------------------->
@@ -46,7 +46,7 @@
         <a href="index.html">
           <div class="logo-box">
             <img
-              src="../img/logo.png"
+              src="img/logo.png"
               alt="アダチダイチのロゴ"
               class="site-logo"
             />
@@ -55,7 +55,7 @@
         <!-- ロゴ終了 -->
         <!-- トップ画像 -->
         <img
-          src="../img/etienne-girardet-Xh6BpT-1tXo-unsplash.jpg"
+          src="img/architect-1073608_1920.jpg"
           alt="パソコンとスマートフォンのそれぞれのスクリーンにアダチダイチの作成したHPが映っています。"
           class="mockup-mworks"
         />
@@ -68,28 +68,60 @@
     <section class="works-detail">
       <div class="container-fluid">
         <!-- 実績タイトル -->
-        <h2 class="works-detail-title">Coop. Site</h2>
+        <h2 class="works-detail-title">Portfolio of My Friend</h2>
         <!-- 実績タイトル終了 -->
         <!-- 実績詳細 -->
         <div class="detail-wrapper flexbox">
           <!-- 実績テキスト -->
           <div class="text-wrapper">
-            <h3 class="detail-title">
-              書道教室のHPを作成しました
-            </h3>
-            <p class="detail-text">
-              吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。どうも咽せぽくて実に弱った。これが人間の飲む煙草というものである事はようやくこの頃知った。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わ
-            </p>
-            <a href="#" class="visit-site"
-              >サイトを訪れる<i class="fas fa-arrow-right"></i
-            ></a>
+            <!-- 概要 -->
+            <div class="text-detail-box">
+              <h3 class="detail-title">
+                <i class="fas fa-check fa-fw color-pink"></i>概要
+              </h3>
+              <p class="detail-text">
+                就職活動を控えた建築学科の友人のためにポートフォリオサイトを作りました。
+              </p>
+            </div>
+            <!-- 製作日数 -->
+            <div class="text-detail-box">
+              <h3 class="detail-title">
+                <i class="fas fa-check fa-fw color-pink"></i>制作日数
+              </h3>
+              <p class="detail-text">
+                2019年12月末〜2029年２月中旬(２ヶ月半)
+              </p>
+            </div>
+            <!-- ポイント -->
+            <div class="text-detail-box">
+              <h3 class="detail-title">
+                <i class="fas fa-check fa-fw color-pink"></i>ポイント
+              </h3>
+              <p class="detail-text">
+                ・デザイン制作、コーディング<br />
+                ・Githubで公開<br />
+                ・Googleフォームを使用<br />
+                ・レスポンシブ化<br />
+              </p>
+            </div>
+            <!-- ソースコード -->
+            <div class="text-detail-box">
+              <h3 class="detail-title">
+                <i class="fas fa-check fa-fw color-pink"></i>ソースコード
+              </h3>
+              <p class="detail-text">
+                <a href="#">Github(micky-portfolio)</a>
+              </p>
+            </div>
           </div>
+          <!-- /div.text-wrapper -->
           <!-- 実績テキスト終了 -->
 
           <!-- スキル詳細 -->
           <div class="skill-wrapper">
-            <h3 class="detail-title">使用したスキル</h3>
-
+            <h3 class="detail-title">
+              <i class="fas fa-check fa-fw color-pink"></i>使用したスキル
+            </h3>
             <div class="skill-icon-container flexbox container">
               <!-- HTML 5 -->
               <div class="skill-detail-card col-sm-4 col-md-5 col-lg-3">
@@ -153,7 +185,7 @@
             </div>
             <!-- /div.container -->
           </div>
-          <!-- スキル詳細終了 -->
+          <!-- スキル詳細終了 /skill-wrapper-->
         </div>
         <!-- 実績詳細終了 -->
       </div>
@@ -173,14 +205,6 @@
             </li>
           </a>
           <!-- /Twitter -->
-
-          <!-- Facebook -->
-          <a href="#">
-            <li>
-              <i class="fab fa-facebook-f"></i>
-            </li>
-          </a>
-          <!-- /Facebook -->
 
           <!-- Mail -->
           <a href="#">
@@ -207,8 +231,8 @@
     <!------------------- フッター終了 -------------------->
 
     <!-- jQuery -->
-    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
