@@ -5,14 +5,7 @@ Author: DaichiAdachi
 Author URI:
 Description:
 Version: 1.0
-License:
-License URI:
-Tags:
-Text Domain:
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
-
 /*------------------------------------------------------
 Table of content
 --------------------------------------------------------
@@ -42,7 +35,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, sans-serif;
+    "Hiragino Sans", "Meiryo", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.75;
@@ -59,7 +52,7 @@ h6 {
   line-height: 1.2;
   color: #333;
   font-family: "Futura", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, sans-serif;
+    "Hiragino Sans", "Meiryo", sans-serif;
 }
 p {
   font-size: 1.4rem;
@@ -123,6 +116,7 @@ section {
   padding: 0;
   margin: 0;
 }
+
 /* セクションタイトル */
 h2.section-title {
   text-align: center;
@@ -135,7 +129,14 @@ h2.section-title {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.text-red {
+  color: #ea4a4c;
+  font-weight: bold;
+}
+.text-border-red {
+  text-decoration: underline solid #ea4a4c;
+  font-weight: bold;
+}
 /*----------------------------------------
 1.5 jQuery 共通スタイル
 ----------------------------------------*/
@@ -172,8 +173,8 @@ h2.section-title {
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 43%;
+  left: 40%;
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
 }
@@ -286,9 +287,14 @@ header.top-header {
   margin: 20px;
   position: absolute;
 }
+
 img.site-logo {
   width: 60px;
   height: 65px;
+  transition: all ease 0.5s;
+}
+.site-logo:hover {
+  transform: scale(0.85);
 }
 /* ハンバーガーボタン */
 .nav-hamburger-btn {
@@ -341,7 +347,9 @@ ul.header-nav-list {
 /*----------------------------------------
 4.トップページ
 ----------------------------------------*/
-
+.top-container {
+  line-height: 0;
+}
 .box-video-sp {
   position: relative;
 }
@@ -383,50 +391,18 @@ h1.top-center {
 }
 
 /*----------------------------------------
-5.あいさつ
-----------------------------------------*/
-#greeting {
-  width: 100%;
-  height: auto;
-  padding: 10% 0;
-}
-.greeting-box {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-color: #fafafa;
-}
-.greeting-box h2 {
-  text-align: center;
-}
-.greeting-jpn {
-  margin: 10%;
-}
-.greeting-eng {
-  margin: 10%;
-}
-h2.greeting-jpn {
-  font-family: "ヒラギノ角ゴシック", "Yu Gothic";
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-h2.greeting-eng {
-  font-size: 1.4rem;
-}
-span.text-white {
-  color: #fafafa;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: #a7677f;
-  background: linear-gradient(transparent 70%, #a7677f 0%);
-}
-/*----------------------------------------
 6.自己紹介
 ----------------------------------------*/
 .about-container {
   width: 100%;
   height: auto;
   background-color: #547a82;
+}
+.about-box-container {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 150px;
 }
 .profile {
   width: 80%;
@@ -443,9 +419,32 @@ span.text-white {
 }
 
 h2.aboutme-title,
-h3.author-name,
-p.about-message {
-  color: #e5eec1;
+h3.author-name {
+  color: #fafafa;
+}
+.message-wrapper i {
+  font-size: 18px;
+  margin-right: 15px;
+  color: #fafafa;
+}
+.message-wrapper h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #fafafa;
+}
+.message-wrapper h5 {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 20px 0 10px 30px;
+  color: #fafafa;
+}
+.message-wrapper p {
+  margin: 20px 0 0 30px;
+  color: #fafafa;
+}
+.message-wrapper span {
+  color: #78ef30;
+  font-weight: bold;
 }
 .name-wrapper {
   margin-bottom: 10%;
@@ -484,6 +483,10 @@ h3.author-name {
 }
 .skillbox-container i {
   font-size: 40px;
+  margin-bottom: 15px;
+}
+.skill-detail-text {
+  padding-top: 20px;
 }
 /* ロゴカラー */
 .fa-html5 {
@@ -492,6 +495,9 @@ h3.author-name {
 .fa-css3-alt {
   color: #3996d5;
 }
+.fa-sass {
+  color: #ce689b;
+}
 .fa-js-square {
   color: #f8d23d;
 }
@@ -499,19 +505,29 @@ h3.author-name {
   color: #0773aa;
 }
 .fa-adobe {
-  color: #fe0100;
+  color: #fe25be;
+}
+.fa-image {
+  color: #2fa9ff;
 }
 .fa-git {
   color: #ef5132;
 }
+.fa-gulp {
+  color: #ea4a4c;
+}
 /*----------------------------------------
 8. PC写真
 ----------------------------------------*/
+#pic {
+  width: 100%;
+  height: auto;
+}
 .pc-pic-container {
   position: relative;
   height: 40vh;
   width: 100%;
-  background-image: url(../img/hannah-wei-aso6SYJZGps-unsplash-min.jpg);
+  background-image: url(img/pcworks.jpg);
   opacity: 0.8;
   background-repeat: no-repeat;
   background-position: center;
@@ -528,8 +544,15 @@ h3.author-name {
   background-color: #547a82;
   padding-bottom: 10%;
 }
-
-.works-wrapper {
+/* タイトル */
+h2.works-title {
+  color: #fafafa;
+}
+/* 小見出し */
+.works-title-detail {
+  text-align: center;
+  font-size: 14px;
+  color: #fafafa;
   margin: 10%;
   position: relative;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
@@ -537,34 +560,131 @@ h3.author-name {
 .works-wrapper:hover {
   transform: scale(1.1);
 }
-.works-img {
-  width: 35rem;
-  height: 20rem;
-  object-fit: cover;
-  border: 0.2rem solid #fafafa;
+
+/* Works */
+div.inner {
+  width: 80%;
+  height: auto;
+  margin: 5% auto;
 }
-h2.works-title {
-  color: #fafafa;
-}
-/* マウスオーバー時 */
-.hover-text {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background-color: rgba(51, 51, 51, 0.6);
-  transition: all 0.5s ease;
-}
-p.caption {
+
+h3.works-title-center {
   text-align: center;
-  padding-top: 80px;
-  color: #fafafa;
+  color: #333;
+  margin: 25px 0;
+  padding: 20px;
+  background-color: #e8c5b8;
+  border-left: solid 10px #e76233;
+  font-size: 14px;
+  font-weight: bold;
 }
-.works-wrapper:hover .hover-text {
-  opacity: 1;
+.works-box-container {
+  display: block;
+  justify-content: center;
+}
+.works-image-container {
+  width: 100%;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.works-image-container img {
+  width: auto;
+}
+.works-text-container {
+  width: 100%;
+  margin: 25px 0;
+}
+.works-text-container i {
+  font-size: 20px;
+  color: #e76233;
+}
+.works-text-container h4 {
+  font-size: 24px;
+  color: #fafafa;
+  display: inline;
+  padding: 10px;
+}
+.works-text-container p {
+  color: #fafafa;
+  margin: 15px 0 40px;
+}
+/* 詳細をみる */
+
+div.show-detail-btn {
+  width: 150px;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+  transition: all ease 1s;
+  justify-content: center;
+}
+div.show-detail-btn:hover {
   transform: scale(0.95);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+.show-detail-btn i {
+  padding: 10px;
+  color: #333;
+}
+.show-detail-btn p {
+  padding: 7px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+/*----------------------------------------
+10. Article
+----------------------------------------*/
+#article {
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+}
+.article-title-detail {
+  text-align: center;
+  font-size: 14px;
+  margin: 10%;
+  color: #333;
+}
+.article-inner {
+  width: 80%;
+  height: auto;
+  margin: 5% auto;
+}
+.article-box-container {
+  display: block;
+}
+.article-image-container {
+  width: 100%;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.article-image-container img {
+  width: auto;
+}
+.article-text-container {
+  width: 100%;
+  margin: 25px 0;
+}
+.article-text-container i {
+  color: #e76233;
+  font-size: 18px;
+}
+.article-text-container h4 {
+  display: inline;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+}
+.article-text-container p {
+  margin: 15px 0 40px;
+}
+.article-text-container a {
+  color: #3996d5;
+}
+.article-text-container a:hover {
+  text-decoration: underline;
 }
 /*----------------------------------------
 10. Contact
@@ -638,13 +758,27 @@ p.copyright {
   transition: all ease 0.5s;
 }
 .footer-logo:hover {
-  transform: scale(1.5);
+  color: #ea3277;
 }
 
 /*----------------------------------------
 タブレットメディアクリ
 ----------------------------------------*/
 @media screen and (min-width: 426px) {
+  /*----------------------------------------
+1. 共通のスタイル
+----------------------------------------*/
+  h2.section-title:before {
+    bottom: 45px;
+    width: 80px;
+  }
+  /*----------------------------------------
+2.ロード画面
+----------------------------------------*/
+  .sk-folding-cube {
+    top: 52%;
+    left: 46%;
+  }
   /*----------------------------------------
 3.ヘッダー
 ----------------------------------------*/
@@ -659,7 +793,7 @@ p.copyright {
   ul.header-nav-list {
     display: flex;
     justify-content: flex-end;
-    color: #fafafa;
+    color: #333;
     margin-right: 35px;
   }
   li.heder-nav-item {
@@ -669,7 +803,7 @@ p.copyright {
   }
 
   li.heder-nav-item:hover {
-    transform: scale(1.5);
+    color: #ea3277;
   }
   /*----------------------------------------
 4.トップページ
@@ -689,18 +823,6 @@ p.copyright {
     object-fit: cover;
   }
 
-  /*----------------------------------------
-5.あいさつ
-----------------------------------------*/
-  #greeting {
-    padding: 0;
-  }
-  .greeting-jpn {
-    margin: 10% 10% 0;
-  }
-  .greeting-eng {
-    margin: 3% 10% 10%;
-  }
   /*----------------------------------------
 6.自己紹介
 ----------------------------------------*/
@@ -742,7 +864,7 @@ p.copyright {
 /*----------------------------------------
 PCメディアクリ
 ----------------------------------------*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   /*----------------------------------------
 1. 共通のスタイル
 ----------------------------------------*/
@@ -750,7 +872,13 @@ PCメディアクリ
   h2.section-title {
     padding: 10% 0 5%;
   }
-
+  /*----------------------------------------
+2.ロード画面
+----------------------------------------*/
+  .sk-folding-cube {
+    top: 50%;
+    left: 48%;
+  }
   /*----------------------------------------
 4.トップページ
 ----------------------------------------*/
@@ -759,28 +887,15 @@ PCメディアクリ
   }
 
   /*----------------------------------------
-6.あいさつ
-----------------------------------------*/
-  h2.greeting-jpn {
-    margin-top: 10%;
-    margin-bottom: 0;
-    font-size: 3.5rem;
-  }
-  h2.greeting-eng {
-    margin-top: 2%;
-    margin-bottom: 10%;
-    font-size: 2.5rem;
-  }
-  /*----------------------------------------
 6.自己紹介
 ----------------------------------------*/
   .about-pic {
-    width: 25%;
-    margin: 0 5% 10% 10%;
+    width: 60%;
+    margin: auto;
   }
   .about-text-box {
-    width: 40%;
-    margin: 0 10% 10% 5%;
+    width: 80%;
+    margin: 5% auto;
   }
   /*----------------------------------------
 7.スキル
@@ -804,15 +919,106 @@ PCメディアクリ
   /*----------------------------------------
 9. Works
 ----------------------------------------*/
-  .works-img {
-    width: 70rem;
-    height: 30rem;
+
+  /* 小見出し */
+  .works-title-detail {
+    margin: 0;
+  }
+  .works-box-container {
+    display: block;
+    width: 100%;
+  }
+  h3.works-title-center {
+    width: 350px;
+    margin: 0 auto 50px auto;
+  }
+  .works-image-container {
+    width: 80%;
+    margin: auto;
+    height: auto;
+  }
+  .works-text-container {
+    width: 80%;
+    margin: 10% auto;
   }
 
+  /*----------------------------------------
+10. Article
+----------------------------------------*/
+  .article-inner {
+    margin-bottom: 10%;
+  }
+  h3.article-title-detail {
+    margin: 0;
+  }
+  .article-text-container {
+    flex-wrap: nowrap;
+  }
+  .article-image-container {
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+  .article-text-container {
+    width: 80%;
+    margin: 10% auto;
+  }
   /*----------------------------------------
 10. Contact
 ----------------------------------------*/
   form.contact-form {
     width: 40%;
+  }
+}
+/*----------------------------------------
+Large PCメディアクリ
+----------------------------------------*/
+@media screen and (min-width: 1025px) {
+  /*----------------------------------------
+6.自己紹介
+----------------------------------------*/
+  .about-box-container {
+    display: flex;
+  }
+  .about-pic {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .about-text-box {
+    width: 60%;
+    margin: 0 0 0 10%;
+  }
+  /*----------------------------------------
+9. Works
+----------------------------------------*/
+  div.inner {
+    width: 100%;
+    margin: 5% auto;
+  }
+  .works-box-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  .works-image-container {
+    width: 550px;
+    margin-right: 100px;
+  }
+  .works-text-container {
+    width: 100%;
+    margin: 0;
+  }
+  /*----------------------------------------
+10. Article
+----------------------------------------*/
+  .article-box-container {
+    display: flex;
+  }
+  .article-text-container {
+    margin: 0 auto;
+  }
+  .article-image-container {
+    width: 550px;
+    margin-right: 100px;
   }
 }

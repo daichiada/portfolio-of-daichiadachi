@@ -1,6 +1,21 @@
+<?php
+/**
+ * Template Name: 1カラムテンプレート
+ * Description: 1カラムレイアウト用のテンプレート
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173073447-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-173073447-1');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -55,7 +70,7 @@
         <!-- ロゴ終了 -->
         <!-- トップ画像 -->
         <img
-          src="img/architect-1073608_1920.jpg"
+          src="img/micky-works.png"
           alt="パソコンとスマートフォンのそれぞれのスクリーンにアダチダイチの作成したHPが映っています。"
           class="mockup-mworks"
         />
@@ -68,7 +83,7 @@
     <section class="works-detail">
       <div class="container-fluid">
         <!-- 実績タイトル -->
-        <h2 class="works-detail-title">Portfolio of My Friend</h2>
+        <h2 class="works-detail-title">ポートフォリオサイト（友人）</h2>
         <!-- 実績タイトル終了 -->
         <!-- 実績詳細 -->
         <div class="detail-wrapper flexbox">
@@ -77,40 +92,61 @@
             <!-- 概要 -->
             <div class="text-detail-box">
               <h3 class="detail-title">
-                <i class="fas fa-check fa-fw color-pink"></i>概要
+                概要
               </h3>
               <p class="detail-text">
-                就職活動を控えた建築学科の友人のためにポートフォリオサイトを作りました。
+                依頼者である友人が建築学科の院生でポートフォリオサイトを希望していたので、これまで彼が製作した建築作品を1Pにまとめて掲示することに努めました。<br>
+                また、トップページ、ロゴ作品ページを含む3Pほどのポートフォリオサイトを作成しました。
+              </p>
+            </div>
+            <!-- 開発の経緯 -->
+            <div class="text-detail-box">
+              <h3 class="detail-title">
+                開発の経緯/開発フロー
+              </h3>
+              <p class="detail-text">
+                HTML,CSS,jQueryの基礎知識をある程度身につけた後、学習の定着度を図るために友人に声をかけ制作に取り組みました。<br><br>
+                ヒアリング　▶　フレームワーク・デザインカンプ作成　▶　コーディング　▶　納品
               </p>
             </div>
             <!-- 製作日数 -->
             <div class="text-detail-box">
               <h3 class="detail-title">
-                <i class="fas fa-check fa-fw color-pink"></i>制作日数
+                制作日数
               </h3>
               <p class="detail-text">
-                2019年12月末〜2029年２月中旬(２ヶ月半)
+                2019年12月末〜2020年２月中旬（２ヶ月半）
               </p>
             </div>
             <!-- ポイント -->
             <div class="text-detail-box">
               <h3 class="detail-title">
-                <i class="fas fa-check fa-fw color-pink"></i>ポイント
+                ポイント
               </h3>
               <p class="detail-text">
-                ・デザイン制作、コーディング<br />
-                ・Githubで公開<br />
-                ・Googleフォームを使用<br />
-                ・レスポンシブ化<br />
+                ・「bgswitcher.js」でスライドショーを実装<br />
+                ・ GitHubで公開<br />
+                ・「Googleフォーム」でお問い合わせフォームを実装<br />
+                ・ スマホ・タブレット・PC対応<br />
               </p>
             </div>
             <!-- ソースコード -->
             <div class="text-detail-box">
               <h3 class="detail-title">
-                <i class="fas fa-check fa-fw color-pink"></i>ソースコード
+                ソースコード
               </h3>
               <p class="detail-text">
-                <a href="#">Github(micky-portfolio)</a>
+                <a href="https://github.com/daichiada/m-okajima-portfolio" target="_blank">GitHub（m-okajima-portfolio）</a>
+              </p>
+            </div>
+            <!-- 全画面キャプチャ -->
+            <div class="text-detail-box">
+              <h3 class="detail-title">
+                全画面キャプチャ
+              </h3>
+              <p class="detail-text">
+                <a href="https://drive.google.com/file/d/1a5ujpvrFcc2nV8XsKplIVRdHmKTFPM8P/view?usp=sharing" target="_blank">・PCイメージ（Googleドライブ）</a><br>
+                <a href="https://drive.google.com/file/d/1dSy4PXKt82-P1PgYK1ko4mV6Pxm8o1rv/view?usp=sharing" target="_blank">・スマホイメージ（Googleドライブ）</a>
               </p>
             </div>
           </div>
@@ -120,7 +156,7 @@
           <!-- スキル詳細 -->
           <div class="skill-wrapper">
             <h3 class="detail-title">
-              <i class="fas fa-check fa-fw color-pink"></i>使用したスキル
+              使用したスキル
             </h3>
             <div class="skill-icon-container flexbox container">
               <!-- HTML 5 -->
@@ -162,11 +198,26 @@
                 <!-- /icon -->
                 <!-- skill-name -->
                 <div class="skill-name">
-                  <h4>JavaScript</h4>
+                  <h4>jQuery</h4>
                 </div>
                 <!-- /skill-name -->
               </div>
               <!-- Java Script 終了 -->
+
+              <!-- git -->
+              <div class="skill-detail-card col-sm-4 col-md-5 col-lg-3">
+                <!-- icon -->
+                <div class="skill-icon-box">
+                  <i class="fab fa-git"></i>
+                </div>
+                <!-- /icon -->
+                <!-- skill-name -->
+                <div class="skill-name">
+                  <h4>Git</h4>
+                </div>
+                <!-- /skill-name -->
+              </div>
+              <!-- git 終了 -->
 
               <!-- Adobe Xd -->
               <div class="skill-detail-card col-sm-4 col-md-5 col-lg-3">
@@ -184,6 +235,17 @@
               <!-- Adobe XD 終了 -->
             </div>
             <!-- /div.container -->
+
+            <!-- 苦労したこと -->
+            <div class="text-detail-box">
+              <h3 class="detail-title">
+                苦労したこと
+              </h3>
+              <p class="detail-text">
+                デザインから自分で組み立てる必要があったので、Adobe XDの使い方や配色、導線配置を他サイトや本を参考にしながら１から学びました。この経験から依頼者へデザイン面での提案や要望の反映がスムーズになり、依頼者の期待に沿ったサイト作成ができました。
+              </p>
+            </div>
+
           </div>
           <!-- スキル詳細終了 /skill-wrapper-->
         </div>
@@ -199,7 +261,7 @@
         <!-- SNSアイコン -->
         <ul class="sns-icon-box flexbox">
           <!-- Twitter -->
-          <a href="#">
+          <a href="https://twitter.com/daichyonnn" target="_blank">
             <li>
               <i class="fab fa-twitter"></i>
             </li>
@@ -207,7 +269,7 @@
           <!-- /Twitter -->
 
           <!-- Mail -->
-          <a href="#">
+          <a href="mailto:mojiblogchan@gmail.com" target="_blank">
             <li>
               <i class="fas fa-envelope"></i>
             </li>
@@ -215,7 +277,7 @@
           <!-- /Mail -->
 
           <!-- Github -->
-          <a href="#">
+          <a href="https://github.com/daichiada" target="_blank">
             <li>
               <i class="fab fa-github"></i>
             </li>

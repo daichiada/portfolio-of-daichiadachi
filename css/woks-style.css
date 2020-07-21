@@ -198,6 +198,40 @@ h2.section-title {
 .color-pink {
   color: #a7677f;
 }
+/* ロゴカラー */
+.fa-html5 {
+  color: #e76233;
+}
+.fa-css3-alt {
+  color: #3996d5;
+}
+.fa-js-square {
+  color: #f8d23d;
+}
+.fa-wordpress {
+  color: #0773aa;
+}
+.fa-adobe {
+  color: #fe0100;
+}
+.fa-git {
+  color: #ef5132;
+}
+.fa-php {
+  color: #5d79a3;
+}
+.fa-sass {
+  color: #ce689b;
+}
+.fa-gulp {
+  color: #ea4a4c;
+}
+.fa-image {
+  color: #2fa9ff;
+}
+.fa-git {
+  color: #ef5132;
+}
 /*----------------------------------------
 1.5.ロード画面
 ----------------------------------------*/
@@ -324,21 +358,25 @@ h2.section-title {
 .logo-box {
   width: auto;
   height: auto;
-  margin: 3rem 3.5rem;
+  margin-left: 20px;
   position: fixed;
   z-index: 2;
 }
 img.site-logo {
   width: 60px;
   height: 65px;
+  transition: all ease 0.5s;
+}
+.site-logo:hover {
+  transform: scale(0.85);
 }
 /* picture */
 img.mockup-mworks {
-  width: 100%;
-  height: 80vh;
+  width: 80%;
+  height: auto;
+  margin: 5% auto 0;
   opacity: 1;
-  object-fit: cover;
-  object-position: 60%;
+  box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.8);
 }
 /*----------------------------------------
 3. 実績詳細
@@ -369,9 +407,27 @@ h3.detail-title {
   font-size: 1.4rem;
   font-weight: bold;
 }
+h3.detail-title:before {
+  color: #a7677f;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 1em;
+  padding-right: 20px;
+  left: 0;
+  top: 5px;
+}
 p.detail-text {
   padding-bottom: 5%;
   font-size: 1.2rem;
+}
+.detail-text a {
+  color: #0773aa;
+  font-weight: bold;
+  transition: all ease 0.5s;
+}
+.detail-text a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
 }
 
 /* スキル詳細 */
@@ -385,7 +441,6 @@ p.detail-text {
   height: 180px;
   margin-bottom: 30px;
   text-align: center;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 .skill-icon-box {
   color: #547a82;
@@ -403,10 +458,9 @@ p.detail-text {
 .skill-name {
   width: 100%;
   height: 58px;
-  background-color: #333;
 }
 .skill-name h4 {
-  color: #fafafa;
+  color: #333;
   line-height: 58px;
   font-size: 1.6rem;
 }
@@ -437,6 +491,11 @@ p.detail-text {
   font-size: 14px;
   color: #fafafa;
   margin: 10px;
+  transition: all ease 0.6s;
+}
+.sns-icon-box a:hover {
+  color: #ea3277;
+  border: 1px solid #ea3277;
 }
 p.copyright {
   text-align: center;
@@ -457,6 +516,7 @@ PCメディアクリ
   h2.works-detail-title {
     font-size: 4.8rem;
     padding: 70px 0;
+    font-weight: 900;
   }
   h3.detail-title {
     font-size: 1.8rem;
@@ -468,13 +528,18 @@ PCメディアクリ
 
   .text-wrapper,
   .skill-wrapper {
-    width: 40%;
     height: auto;
     margin: 0;
   }
-
+  .text-wrapper {
+    width: 30%;
+    margin-right: 10%;
+  }
+  .skill-wrapper {
+    width: 40%;
+  }
   /* スキル詳細 */
   .skill-detail-card {
-    margin: 20px;
+    margin-bottom: 40px;
   }
 }
