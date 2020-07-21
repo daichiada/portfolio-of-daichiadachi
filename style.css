@@ -174,7 +174,7 @@ h2.section-title {
   height: 60px;
   position: absolute;
   top: 43%;
-  left: 40%;
+  left: 43%;
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
 }
@@ -318,7 +318,7 @@ img.site-logo {
 }
 /* ハンバーガーボタン　コンテンツ */
 nav.nav-hamburger-contents {
-  visibility: hidden;
+  display: none;
   width: 100%;
   height: 100vh;
   background-color: #333;
@@ -326,12 +326,12 @@ nav.nav-hamburger-contents {
   opacity: 0.7;
 }
 .nav-hamburger-contents.show {
-  visibility: visible;
+  display: block;
 }
 ul.nav-content-box {
   text-align: center;
   font-size: 25px;
-  margin-top: 50%;
+  margin: 100px auto;
 }
 .nav-content-box li {
   padding-top: 15px;
