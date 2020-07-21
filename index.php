@@ -193,6 +193,7 @@
         </section>
     <!------------------- Skill スキル終了 -------------------->
 
+<<<<<<< HEAD
     <!------------------- Works 実績 -------------------->
     <section id="works">
       <div class="container-fluid">
@@ -407,6 +408,59 @@
       <div class="pc-pic-container"></div>
     </section>
     <!------------------- PC写真終了 -------------------->
+=======
+
+    <!------------------- PC写真 -------------------->
+    <section id="pic">
+      <div class="pc-pic-container"></div>
+    </section>
+    <!------------------- PC写真終了 -------------------->
+
+    <!------------------- Works 実績 -------------------->
+    <section id="works">
+      <div class="container-fluid">
+        <h2 class="section-title works-title fadein">Works</h2>
+
+        <!-- Works Wrapper -->
+        <div class="works-box flexbox">
+          <a href="micky-works.html" class="okajima-works">
+            <div class="okajima-works-wrapper works-wrapper fadein">
+              <img src="img/micky-works.png" alt="友人のポートフォリオサイトを作りました。実績の１つです。" class="okajima-works works-img">
+              <div class="hover-text">
+                <p class="caption">
+                  <b>ポートフォリオサイト</b><br><br>建築学科の友人のために作ったポートフォリオサイトです。<br>在学中に作った建築作品、ロゴ、PCスキルを掲載しております。<br>デザイン作成からコーディングまで行いました。
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="ritugensya-works.html" class="ritsugensya">
+            <div class="ritsugensya-works-wrapper works-wrapper fadein">
+              <img src="img/ritsugensya-works.jpg" alt="書道教室のホームページを作成しました。実績の１つです。" class="ritsugensya-works works-img">
+                <div class="hover-text">
+                  <p class="caption">
+                    <b>書道教室HP(作成中)</b><br><br>デザインからコーディング、WordPress化までを想定しています。<br>現在、作成を勧めております・・・(2020.4~)
+                  </p>
+              </div>
+            </div>
+          </a>
+          <a href="portfolio-works.html" class="myportfolio-works">
+            <div class="myportfolio-works-wrapper works-wrapper fadein" >
+              <img src="img/myportfolio.jpg" alt="自分のポートフォリオを作成しました。実績の１つです。" class="myportfolio-works works-img">
+              <div class="hover-text">
+                <p class="caption">
+                  <b>ポートフォリオサイト(当サイト)</b><br><br>自己紹介からスキル、実績を掲載しております。<br>デザイン作成からコーディング、WorsPress化まで行いました。
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Works Wrapper　終了 -->
+
+
+      </div>
+    </section>
+    <!------------------- Works 実績終了 -------------------->
+>>>>>>> ca3b3567fb889ad1c0e3bd4e95de46164e04d884
 
     <!------------------- Contact お問い合わせ -------------------->
 
@@ -438,7 +492,11 @@
           </div>
           <!-- メッセージ終了 -->
           <!-- 送信ボタン -->
+<<<<<<< HEAD
           <input type="submit" name="confirm" value="Submit" class="submit-btn">
+=======
+          <input type="submit" name="confirm" value="Submit">
+>>>>>>> ca3b3567fb889ad1c0e3bd4e95de46164e04d884
           <!-- 送信ボタン終了 -->
           </form>
           <!-- フォーム終了 -->
@@ -447,4 +505,59 @@
     </section>
     <!------------------- Contact お問い合わせ終了 -------------------->
 
+<<<<<<< HEAD
 <?php get_footer(); ?>
+=======
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+
+        <div class="flex-box footer-logo-wrapper">
+          <!-- Twitter Logo -->
+          <a href="https://twitter.com/daichyonnn">
+            <div class="footer-logo twitter-logo">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+          <!-- Twitter Logo 終了-->
+
+          <!-- Mail Logo -->
+          <a href="mailto:mojiblogchan@gmail.com">
+            <div class="footer-logo mail-logo">
+              <i class="fas fa-envelope"></i>
+            </div>
+          </a>
+            <!-- Mail Logo 終了-->
+
+          <!-- Github Logo -->
+          <a href="https://github.com/daichiada">
+            <div class="footer-logo github-logo">
+              <i class="fab fa-github"></i>
+            </div>
+          </a>
+          <!-- Github Logo 終了-->
+        </div>
+
+          <p class="copyright">© 2020 Daichi Adachi inc</p>
+      </div>
+    </footer>
+    <!-- Footer終了 -->
+    <!-- jQuery、Popper.js、Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+>>>>>>> ca3b3567fb889ad1c0e3bd4e95de46164e04d884
