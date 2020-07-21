@@ -555,7 +555,6 @@ h2.works-title {
   color: #fafafa;
   margin: 10%;
   position: relative;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .works-wrapper:hover {
   transform: scale(1.1);
