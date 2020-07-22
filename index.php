@@ -295,9 +295,10 @@
                 ・これまでの言語学習の復習として作成</p>
                 <i class="far fa-lightbulb fa-fw"></i><h4>特徴</h4><br>
                 <p>
+                ・静的サイトをWordPress化させるため、PHPの基礎を一通り勉強<br>
                 ・ワイヤーフレーム及びデザインカンプの作成、コーディング、WordPressa化<br>
                 ・各成果物は個別ページで掲載<br>
-                ・「Contact form 7」 でお問い合わせフォームを実装
+                ・レスポンシブ化
                 </p>
                 <i class="fas fa-hourglass-start fa-fw"></i><h4>制作期間</h4><br>
                 <p>2020年4月〜2020年7月（約３ヶ月）</p>
@@ -445,5 +446,5 @@
       </div>
     </section>
     <!------------------- Contact お問い合わせ終了 -------------------->
-    
+
 <?php get_footer(); ?>

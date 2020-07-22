@@ -58,7 +58,7 @@
     <section class="works-top">
       <div class="container-fluid">
         <!-- ロゴ -->
-        <a href="index.html">
+        <a href="https://portfolio-daichi-adachi.com/">
           <div class="logo-box">
             <img
               src="img/logo.png"
@@ -70,11 +70,7 @@
         <!-- ロゴ終了 -->
         <!-- トップ画像 -->
         <img
-<<<<<<< HEAD:ritugensya-works.php
-          src="img/etienne-girardet-Xh6BpT-1tXo-unsplash.jpg"
-=======
           src="img/coopsiteworkd.png"
->>>>>>> feature/wordpress:page-ritugensya.php
           alt="パソコンとスマートフォンのそれぞれのスクリーンにアダチダイチの作成したHPが映っています。"
           class="mockup-mworks"
         />

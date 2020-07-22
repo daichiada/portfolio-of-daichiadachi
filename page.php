@@ -11,8 +11,7 @@
           <video
             loop autoplay muted playsinline class="top-video"
           >
-          <source src="<?php echo get_template_directory_uri(); ?>/img/topvideo-sp-custom.mp4" type="video/mp4" />
-          <source src="<?php echo get_template_directory_uri(); ?>/img/top-video-sp.webm" type="video/webm">
+          <source src="<?php echo get_template_directory_uri(); ?>/img/topvideo-sp-custom1200.mp4" type="video/mp4" />
         </div>
         <!-- スマホ表示 -->
 
@@ -21,8 +20,7 @@
           <video
             loop autoplay muted playsinline class="top-video"
           >
-          <source src="<?php echo get_template_directory_uri(); ?>/img/topvideo.mp4" type="video/mp4" />
-          <source src="<?php echo get_template_directory_uri(); ?>/img/topvideo.webm" type="video/webm">
+          <source src="<?php echo get_template_directory_uri(); ?>/img/topvideo1200.mp4" type="video/mp4" />
         </div>
         <!-- PC表示 -->
 
