@@ -260,6 +260,12 @@
               </p>
             </div>
 
+            <!-- トップページに戻るボタン -->
+            <a href="https://portfolio-daichi-adachi.com/">
+              <div class="homeback-btn">
+                <p class="sitetop-back">サイトトップに戻る</p>
+              </div>
+            </a>
           </div>
           <!-- スキル詳細終了 /skill-wrapper-->
         </div>
