@@ -389,6 +389,7 @@
                 <i class="far fa-paper-plane"></i><h4>Qiita記事</h4><br>
                 <p>作成したQiita記事<br>
               　 <a href="https://qiita.com/daichiada/items/5ebb51f31bb78ab1079f"　target="_blank">・Sassについて最低限知っておきたい５つの基本機能</a><br>
+              　 <a href="https://qiita.com/daichiada/items/4d914aa9233c0c6fe875"　target="_blank">・Sassを今この瞬間から使えるようになるまでの手順</a><br>
               　 <a href="https://qiita.com/daichiada/items/ae69da767a176d6714f1"　target="_blank">・GitHubにソースコードをアップロード</a>
                 </p>
               </div>
