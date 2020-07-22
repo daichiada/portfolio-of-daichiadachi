@@ -58,7 +58,7 @@
     <section class="works-top">
       <div class="container-fluid">
         <!-- ロゴ -->
-        <a href="index.html">
+        <a href="https://portfolio-daichi-adachi.com/">
           <div class="logo-box">
             <img
               src="img/logo.png"
@@ -123,7 +123,7 @@
                 ポイント
               </h3>
               <p class="detail-text">
-              ・Contact form 7 でお問い合わせフォームを実装<br>
+              ・静的サイトをWordPress化させるため、PHPの基礎を一通り勉強<br>
               ・成果物の詳細を個別ページで掲載<br />
               ・スマホ・タブレット・PCサイズに対応<br />
               </p>
