@@ -109,6 +109,7 @@ body {
   letter-spacing: 0.1rem;
   background-color: #fafafa;
   color: #333;
+  text-align: center;
 }
 h1,
 h2,
@@ -388,7 +389,8 @@ section.works-detail {
 h2.works-detail-title {
   text-align: center;
   padding: 40px 0;
-  font-size: 2.8rem;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* 実績詳細 */
@@ -404,7 +406,7 @@ h2.works-detail-title {
 }
 h3.detail-title {
   padding-bottom: 30px;
-  font-size: 1.4rem;
+  font-size: 18px;
   font-weight: bold;
 }
 h3.detail-title:before {
@@ -412,12 +414,11 @@ h3.detail-title:before {
   content: "\f00c";
   font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 1em;
-  padding-right: 20px;
   left: 0;
   top: 5px;
 }
 p.detail-text {
-  padding-bottom: 5%;
+  margin-bottom: 50px;
   font-size: 1.2rem;
 }
 .detail-text a {
@@ -509,6 +510,12 @@ p.copyright {
 PCメディアクリ
 ----------------------------------------*/
 @media screen and (min-width: 769px) {
+  /*----------------------------------------
+1. 共通のスタイル
+----------------------------------------*/
+  body {
+    text-align: justify;
+  }
   /*----------------------------------------
 3. 実績詳細
 ----------------------------------------*/

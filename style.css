@@ -445,6 +445,7 @@ h3.author-name {
 .message-wrapper span {
   color: #78ef30;
   font-weight: bold;
+  text-decoration: underline solid #ea4a4c;
 }
 .name-wrapper {
   margin-bottom: 10%;
