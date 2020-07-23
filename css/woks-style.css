@@ -480,6 +480,9 @@ div.homeback-btn {
 div.homeback-btn:hover {
   opacity: 0.7;
 }
+.homeback-btn i {
+  padding-right: 25px;
+}
 p.sitetop-back {
   color: #fafafa;
   padding: 6px 0;
