@@ -267,7 +267,7 @@
             <!-- トップページに戻るボタン -->
             <a href="https://portfolio-daichi-adachi.com/">
               <div class="homeback-btn">
-                <p class="sitetop-back">サイトトップに戻る</p>
+                <p class="sitetop-back"><i class="fas fa-fw fa-hand-point-left"></i>サイトトップに戻る</p>
               </div>
             </a>
           </div>
